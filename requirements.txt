@@ -13,3 +13,4 @@ six==1.14.0
 sqlparse==0.3.0
 static3==0.7.0
 psycopg2>=2.6.1
+django-heroku==0.3.1
