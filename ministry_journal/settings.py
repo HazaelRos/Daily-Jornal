@@ -137,3 +137,9 @@ BOOTSTRAP3 = {
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
+
+if os.getcwd() == '/app':
+    # Allow only Heroku to host the project.
+    ALLOWED_HOSTS = ['h-journal.herokuapp.com']
+
+    DEBUG = False
