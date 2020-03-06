@@ -1,0 +1,20 @@
+{% extends "journal/base.html" %}
+{% load bootstrap3 %}
+
+{% block header %}
+ <h2>Añade un nuevo tema:</h2>
+{% endblock header %}
+
+{% block content %}
+
+<form method="post" action="{% url 'journal:new_topic' %}" class="form">
+  {% csrf_token %}
+  {% bootstrap_form form %}
+
+  {% buttons %}
+    <button name="submit" class="btn btn-primary">Añadir</button>
+  {% endbuttons %}
+
+</form>
+
+{% endblock content %}

@@ -1,0 +1,18 @@
+{% extends "journal/base.html" %}
+
+{% block header %}
+  <div class='jumbotron'>
+    <h1>¡Guarda tus experiencias!</h1>
+  </div>
+{% endblock header %}
+
+{% block content %}
+  <h2>
+    <a href="{% url 'users:register' %}">Registrate</a> para que puedas describir
+    y guardar cada una de tus experiencias. Ordenalas por temas y ten un registro
+    de tu vida.
+  </h2>
+  <h2>Cada vez que hagas algo nuevo, registra una entrada
+     y recuerdalo cuando quieras desde donde desees.</h2>
+
+{% endblock content %}
